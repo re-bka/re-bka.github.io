@@ -1,7 +1,9 @@
 <style>
-
+body {
+background-color: mintcream;
+}
 viola {
-	color: Indigo;
+	color: indigo;
 }
 a {
 	color: yellow;
