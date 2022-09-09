@@ -1858,7 +1858,7 @@ mono {
 
 /*HOMEPAGE*/
 
-@media screen and (max-width: 617px) {
+@media screen and (max-width: 600px) {
 
     nav {
         z-index: 3;
@@ -2174,6 +2174,7 @@ mono {
         bottom: 110px;
         display: none;
     }
+    
 
     /*CONTRASTO*/
 
@@ -2705,9 +2706,5 @@ mono {
     .quiz6 {
         align-items: center;
     }
-
-
-    
-
 
 }
