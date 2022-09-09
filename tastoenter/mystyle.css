@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100;0,8..30,200;0,8..30,300;0,8..30,400;0,8..30,500;0,8..30,600;0,8..30,700;0,8..30,800;0,8..30,900;1,8..30,100;1,8..30,200;1,8..30,300;1,8..30,400;1,8..30,500;1,8..30,600;1,8..30,700;1,8..30,800;1,8..30,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
 
 
 body {
@@ -1862,6 +1863,7 @@ mono {
 
     nav {
         z-index: 3;
+        width: 100%;
     }
 
     nav li {
@@ -1901,7 +1903,6 @@ mono {
         right: 0px;
         top: 0px;
         width: fit-content;
-        height: 32%;
         background-color: whitesmoke;
         margin: 0px;
         padding-top: 50px;
@@ -1943,6 +1944,7 @@ mono {
 
     .side_menu ul {
         padding-right: 40px;
+        margin-bottom: 30px;
     }
 
     .side_menu img:active {
