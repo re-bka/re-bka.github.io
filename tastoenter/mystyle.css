@@ -1864,6 +1864,7 @@ mono {
     nav {
         z-index: 3;
         width: 100%;
+        border-bottom: solid black 1.5px;
     }
 
     nav li {
@@ -1915,6 +1916,7 @@ mono {
         transition: all .4s;
         display: none;
         z-index: 2;
+        border: solid black 1.5px;
     }
 
     @keyframes sidemenu {
@@ -1981,23 +1983,25 @@ mono {
         flex-wrap: wrap;
         width: 100%;
         margin: 0px;
+        border: solid black 1.5px;
     }
     
     .intro pulsanti {
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
     }
 
     .cta, .ghost {
         font-size: 10.5pt;
-        width: fit-content;
+        width: 80px;
         height: fit-content;
-        margin-top: 10px;
+        margin: 8px;
         padding: 8px 16px;
-    }
-
-    .cta {
-        margin-right: 15px;
+        text-align: center;
+        font-weight: 600;
+        border: solid black 1.5px;
     }
 
     .sommario {
@@ -2008,7 +2012,7 @@ mono {
         padding: 30px 20px 8px 35px;
         margin-bottom: 40px;
         overflow: visible;
-        border: solid black 2px;
+        border: solid black 1.5px;
     }
 
     .sommario h1 {
@@ -2033,6 +2037,7 @@ mono {
         padding: 20px 20px 40px 30px;
         margin: 0px;
         margin-top: 50px;
+        border: solid black 1.5px;
     }
 
     .contrasto {
