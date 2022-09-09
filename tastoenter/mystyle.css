@@ -2290,12 +2290,14 @@ mono {
         padding-bottom: 80px;
         padding-top: 0px;
         overflow: hidden;
+        border: solid black 1px;
     }
 
     .sezione1, .sezione2 {
         margin: 25px;
         padding: 25px;
         border-radius: 30px;
+        border: solid black 1px;
     }
 
     .sezione1 h3 {
@@ -2345,11 +2347,21 @@ mono {
         height: fit-content;
         margin-top: -80px;
         margin-right: 0px;
+        border-top: solid black 1px;
+        border-left: solid black 1px;
+        border-right: solid black 1px;
     }
 
     .quiz {
         justify-content: center;
         align-items: center;
+        border-left: solid black 1px;
+        border-right: solid black 1px;
+    }
+
+    .sfondo_footer1 {
+        border-left: solid black 1px;
+        border-right: solid black 1px;
     }
 
     .quiz a {
@@ -2375,12 +2387,14 @@ mono {
         width: fit-content;
         padding: 12px;
         margin-left: 0px;
+        border: solid black 1px;
     }
 
     .quiz .next,.quiz2 .next, .quiz3 .next, .quiz4 .next, .quiz5 .next, .quiz6 .next {
         width: fit-content;
         padding: 12px;
         margin-right:0px;
+        border: solid black 1px;
     }
 
     /*ETICHETTE*/
@@ -2419,6 +2433,10 @@ mono {
         margin: 20px;
     }
 
+    .sezioni2 {
+        border-bottom: 0px;
+    }
+
     .sezioni2 .sezione1 h3 {
         font-size: 20pt;
         line-height: 120%;
@@ -2443,6 +2461,11 @@ mono {
 
     .sezioni2 {
         padding-bottom: 0px;
+    }
+
+    .quiz2 {
+        border-left: solid black 1px;
+        border-right: solid black 1px;
     }
 
     /*PULSANTI*/
@@ -2473,6 +2496,7 @@ mono {
         position: relative;
         right: 0px;
         left: 0px;
+        border: solid black 1px;
     }
     
     .sezioni3 .sezione2 {
@@ -2507,6 +2531,7 @@ mono {
     .titolo_bottoni h3 {
         font-size: 18pt;
         text-align: center;
+        border: solid black 1px;
     }
 
     .types .cta, .types .ghost {
@@ -2558,14 +2583,20 @@ mono {
     .dimensioni, .spaziatura, .giustificazione {
         width: fit-content;
         margin-bottom: 30px;
+        border: solid black 1px;
     }
 
     .dimensioni p, .spaziatura p, .giustificazione p {
         font-size: 11pt;
     }
 
+    mono, serif, sans {
+        border: solid #F15A24 1.5px;
+    }
+
     .dimensioni h4, .spaziatura h4, .giustificazione h4 {
         font-size: 13pt;
+        border: solid black 1px;
     }
 
     .quiz4 {
@@ -2584,6 +2615,7 @@ mono {
         font-size: 16pt;
         text-align: center;
         padding: 8px 16px;
+        border: solid black 1px;
     }
 
     .teoria5 .immagine1 img {
@@ -2600,18 +2632,24 @@ mono {
         border-radius: 30px;
     }
 
+    .sezioni5 .sezione2 h4 {
+        border: solid black 1px;
+    }
+
     .sezioni5 .sezione2 {
         display: flex;
         justify-content: center;
         width: 100%;
         margin: 0px;
         margin-top: 60px;
+        border: solid black 1px;
     }
 
      .img-esempio, .img-esempio1 {
         width: 100%;
         border-radius: 20px;
         margin-top: -30px;
+        border: solid black 1px;
     }
 
     .par01 {
@@ -2649,6 +2687,7 @@ mono {
         padding: 8px 16px;
         text-align: center;
         box-shadow: -5px 5px 0px black;
+        border: solid black 1px;
     }
 
     .adv1, .adv2, .adv3, .adv4, .adv5, .adv6 {
@@ -2693,6 +2732,7 @@ mono {
     .sezioni6 {
         margin: 15px;
         padding: 0px;
+        border: none;
     }
 
     .sezioni6 p {
