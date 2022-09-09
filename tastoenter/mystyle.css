@@ -1215,7 +1215,7 @@ label {
 }
 
 .par, .par2, .par3, .par4 {
-    font-size: 10.5pt;
+    font-size: 11pt;
     text-align: left;
     padding-left: 30px;
     display: none;
@@ -1963,11 +1963,11 @@ mono {
     }
 
     .intro p {
-        font-size: 10.5pt;
+        font-size: 13pt;
     }
 
     .logo_intro {
-        width: 90%;
+        width: 100%;
     }
 
     .corpo {
@@ -1994,14 +1994,17 @@ mono {
     }
 
     .cta, .ghost {
-        font-size: 10.5pt;
-        width: 80px;
+        font-size: 12pt;
         height: fit-content;
-        margin: 8px;
         padding: 8px 16px;
         text-align: center;
         font-weight: 600;
         border: solid black 1.5px;
+    }
+
+    pulsanti .cta, pulsanti .ghost {
+        margin: 8px;
+        width: 85px;
     }
 
     .sommario {
@@ -2020,7 +2023,7 @@ mono {
     }
 
     .sommario p {
-        font-size: 10.5pt;
+        font-size: 12pt;
         margin-top: 10px;
     }
 
@@ -2070,8 +2073,9 @@ mono {
     }
 
     .etichette p, .contrasto p, .pulsanti p, .testo p, .rappresentazione p, .consigli p {
-        font-size: 10.5pt;
+        font-size: 11pt;
         padding-right: 0px;
+        margin-top: 20px;
     }
 
     .etichette h2, .contrasto h2, .pulsanti h2, .testo h2, .rappresentazione h2, .consigli h2  {
@@ -2102,7 +2106,7 @@ mono {
         justify-content: center;
         padding-bottom: 20px;
         padding-left: 20px;
-        font-size: 11pt;
+        font-size: 12pt;
         margin-left: -2px;
     }
 
@@ -2189,7 +2193,7 @@ mono {
         display: flex;
         justify-content: center;
         flex-direction: column-reverse;
-        padding: 30px;
+        padding: 25px;
         border: none;
     }
 
@@ -2222,7 +2226,7 @@ mono {
     }
 
     .capitolo1 p, .capitolo2 p, .capitolo3 p, .capitolo4 p, .capitolo5 p, .capitolo6 p {
-        font-size: 10.5pt;
+        font-size: 11pt;
         padding-right: 20px;
     }
 
@@ -2232,7 +2236,7 @@ mono {
     }
 
     .capitolo1 u {
-        font-size: 10.5pt;
+        font-size: 11pt;
     }
 
     .capitolo1 ul li {
@@ -2244,11 +2248,12 @@ mono {
     }
 
     .testo1 h3 {
-        font-size: 18pt;
+        font-size: 20pt;
     }
 
     .testo1 p {
-        font-size: 10.5pt;
+        font-size: 11pt;
+        margin-bottom: 0px;
     }
 
     .testo1 ul li {
@@ -2258,7 +2263,7 @@ mono {
     .teoria1, .teoria2, .teoria3, .teoria5 {
         margin: 0px;
         margin-bottom: 50px;
-        padding: 30px;
+        padding: 25px;
         display: flex;
         justify-content: center;
         border-top: solid black 1px;
@@ -2275,6 +2280,7 @@ mono {
         border-radius: 30px;
         padding: 0px;
         margin: 5px;
+        margin-top: 40px;
     }
 
     .sezioni, .sezioni2, .sezioni3, .sezioni4, .sezioni5, .sezioni6 {
@@ -2287,8 +2293,8 @@ mono {
     }
 
     .sezione1, .sezione2 {
-        margin: 30px;
-        padding: 30px;
+        margin: 25px;
+        padding: 25px;
         border-radius: 30px;
     }
 
@@ -2297,7 +2303,7 @@ mono {
     }
 
     .sezione1 p, .sezione2 p, .sezione a {
-        font-size: 10.5pt;
+        font-size: 11pt;
         width: 100%;
     }
 
@@ -2413,8 +2419,14 @@ mono {
         margin: 20px;
     }
 
+    .sezioni2 .sezione1 h3 {
+        font-size: 20pt;
+        line-height: 120%;
+    }
+
     .sezioni2 .sezione2 h3 {
-        font-size: 18pt;
+        font-size: 20pt;
+        line-height: 120%;
     }
 
     .sezione2 .esempio {
@@ -2549,7 +2561,7 @@ mono {
     }
 
     .dimensioni p, .spaziatura p, .giustificazione p {
-        font-size: 10.5pt;
+        font-size: 11pt;
     }
 
     .dimensioni h4, .spaziatura h4, .giustificazione h4 {
@@ -2565,7 +2577,7 @@ mono {
     .sezioni5 {
         border-radius: 40px;
         padding-bottom: 0px;
-        padding: 30px;
+        padding: 25px;
     }
 
     .sezioni5 .sezione1 h3 {
@@ -2651,7 +2663,7 @@ mono {
     }
 
     .adv p {
-        font-size: 10.5pt;
+        font-size: 12pt;
     }
 
     .adv1 img, .adv3 img, .adv4 img, .adv5 img {
@@ -2684,7 +2696,7 @@ mono {
     }
 
     .sezioni6 p {
-        font-size: 10.5pt;
+        font-size: 11pt;
     }
 
     .sezioni6 h4 {
