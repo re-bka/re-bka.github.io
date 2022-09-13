@@ -1125,7 +1125,6 @@ p.style.color = 'red';
 }
 
 
-
 const image_input = document.querySelector("#input-image");
 
 image_input.addEventListener("change", function() {
@@ -1136,3 +1135,27 @@ image_input.addEventListener("change", function() {
   });
   reader.readAsDataURL(this.files[0]);
 });
+
+const image_input1 = document.querySelector("#input-image1");
+
+image_input1.addEventListener("change", function() {
+  const reader = new FileReader();
+  reader.addEventListener("load", () => {
+    const uploaded_image = reader.result;
+    document.querySelector("#input-image1").style.backgroundImage = `url(${uploaded_image})`;
+  });
+  reader.readAsDataURL(this.files[0]);
+});
+
+const image_input2 = document.querySelector("#input-image2");
+
+image_input2.addEventListener("change", function() {
+  const reader = new FileReader();
+  reader.addEventListener("load", () => {
+    const uploaded_image = reader.result;
+    document.querySelector("#input-image2").style.backgroundImage = `url(${uploaded_image})`;
+  });
+  reader.readAsDataURL(this.files[0]);
+});
+
+
