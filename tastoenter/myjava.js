@@ -1189,6 +1189,15 @@ showSol9 = function () {
     text1.style.display = 'none';
     text2 = document.querySelector('.cat-img3 h4');
     text2.style.display = 'none';
+
+    riquadro1 = document.querySelector('.cat-img1');
+    riquadro1.style.backgroundImage = 'none';
+
+    riquadro2 = document.querySelector('.cat-img2');
+    riquadro2.style.backgroundImage = 'none';
+
+    riquadro3 = document.querySelector('.cat-img3');
+    riquadro3.style.backgroundImage = 'none';
 }
 
 
@@ -1197,16 +1206,19 @@ hideSol9 = function () {
     input.style.display = 'block';
     dark = document.querySelector('.dark-session');
     dark.style.display = 'none';
+    input.value = '';
 
     input = document.querySelector('.cat-img2 input');
     input.style.display = 'block';
     dark = document.querySelector('.dark-session1');
     dark.style.display = 'none';
+    input.value = '';
 
     input = document.querySelector('.cat-img3 input');
     input.style.display = 'block';
     dark = document.querySelector('.dark-session2');
     dark.style.display = 'none';
+    input.value = '';
 
     bottone = document.querySelector('.verifica .ghost');
     bottone.style.display = 'block';
@@ -1219,7 +1231,9 @@ hideSol9 = function () {
     text1.style.display = 'block';
     text2 = document.querySelector('.cat-img3 h4');
     text2.style.display = 'block';
+
 }
+
 
 selectCat = function () {
     opzione1 = document.querySelector('.prima');
@@ -1250,3 +1264,40 @@ selectCat3 = function () {
     opzione2 = document.querySelector('.seconda');
     opzione2.classList.remove('seconda1');
 }
+
+
+
+
+
+
+
+
+
+const inputColor = document.querySelector("#back-color");
+const textColor = document.querySelector("#input-text-color");
+
+
+
+// Change color function
+const changeColor = (evt) => {
+  const selectedColor = evt.currentTarget.value;
+  textColor.value = selectedColor;
+  inputColor.value = selectedColor;
+};
+
+// Add the Event to your input
+textColor.addEventListener("input", changeColor);
+
+
+const inputColor1 = document.querySelector("#text-color");
+const textColor1 = document.querySelector("#input-text-color1");
+
+// Change color function
+const changeColor1 = (evt) => {
+  const selectedColor = evt.currentTarget.value;
+  textColor1.value = selectedColor;
+  inputColor1.value = selectedColor;
+};
+
+// Add the Event to your input
+textColor1.addEventListener("input", changeColor1);

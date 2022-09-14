@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="mystyle.css" type="text/css">
+    <title>tasto enter</title>
+    </head>
+<body id="contrasto">
+    <header>
+    <nav>
+        <div class="logo"><a href="index.html"><img src="logo_bw.svg" alt="logo" height="38px" class="logobw"><img src="logo_colore.svg" alt="logo bianco colorato" height="38px" class="logocolore"></a></div>
+        <ul>
+            <li class="contatti"><a href="#target" class="contatti">Contatti</a></li>
+            <li class="contenuti"><a href="#target1">Contenuti</a></li>
+            <li class="home"><a href="index.html">Home</a></li>
+            <li class="ham_menu"><img src="ham.svg" width="25px" class="block" onclick="showMenu()"><img src="ham_off.svg" width="25px" class="off" onclick="hideMenu()"></li>
+        </ul>
+    </nav>
+    <div class="side_menu">
+        <ul>
+            <li class="home"><b><a href="index.html" onclick="hideMenu()">Home <div><img src="freccia.svg" width="15px"></a></b></div></li>
+            <li class="contenuti"><b><a href="#target1" onclick="hideMenu()">Contenuti <div><img src="freccia.svg" width="15px"></a></b></div></li>
+            <li class="contatti"><b><a href="#target" class="contatti" onclick="hideMenu()">Contatti <div><img src="freccia.svg" width="15px"></a></b></div></li>
+        </ul>
+    </div>
+    </header>
+    <main>
+        <div class="title">
+            <h1>Color Contrast Analyser</h1>
+            <h3>Calcola il rapporto di contrasto tra il colore di testo e il colore di fondo.</h3>
+        </div>
+        <div class="insert-color">
+            <div class="insert-back-color">
+                <label for="back-input"><b>Background color</b></label>
+                <div class="input1"><input type='text' placeholder="#FFFFFF" id="input-text-color" spellcheck="false"><input type="color" id="back-color" value="#FFFFFF"></div>
+            </div>
+            <div class="insert-text-color">
+                <label for="text-input"><b>Text color</b></label>
+                <div class="input2"><input type='text' placeholder="#000000" id="input-text-color1"><input type="color" id="text-color" value="text-input"></div>
+            </div>
+    </div>
+    </main>
+    <script type="text/javascript" src="myjava.js"></script>
+</body>
+</html>

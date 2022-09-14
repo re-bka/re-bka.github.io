@@ -2833,7 +2833,75 @@ input::file-selector-button {
 }
 
 
+.title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 80px;
+}
 
+.title h1 {
+    font-size: 40pt;
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+.title h3 {
+    font-size: 20pt;
+    text-align: center;
+}
+
+.insert-color {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+#input-text-color, #input-text-color1 {
+    height: 45px;
+  border-radius: 5px;
+  border: solid gray 2px;
+}
+
+#back-color, #text-color {
+    padding: 0px;
+    margin: 20px 0px 0px 0px;
+    height: 32px;
+    width: 32px;
+    border: none;
+    background-color: black;
+    border-radius: 5px;
+    position: relative;
+    top: 12px;
+    right: 38px;
+}
+
+#back-color::-webkit-color-swatch {
+    border: solid black 2px;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+#text-color::-webkit-color-swatch {
+    border: none;
+    border: solid black 2px;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+#back-color::-webkit-color-swatch-wrapper {
+    border: none;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+#text-color::-webkit-color-swatch-wrapper {
+    border: none;
+    padding: 0px;
+    border-radius: 5px;
+}
 
 
 /*MEDIA QUERIES*/
@@ -3865,12 +3933,14 @@ input::file-selector-button {
 
     .prima, .seconda {
         font-size: 13pt;
+        margin-bottom: 0px;
     }
 
     categorie .terza {
-        margin-top: 0px;
+        margin-top: 20px;
         margin-bottom: 0px;
         font-size: 13pt;
+        height: fit-content;
     }
 
     .img-text-container {
