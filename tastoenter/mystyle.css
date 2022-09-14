@@ -2843,7 +2843,7 @@ input::file-selector-button {
 @media screen and (max-width: 600px) {
 
     nav {
-        z-index: 3;
+        z-index: 4;
         width: 100%;
         border-bottom: solid black 1px;
     }
@@ -2896,39 +2896,13 @@ input::file-selector-button {
         animation-duration: 0.4s;
         transition: all .4s;
         display: block;
-        z-index: 2;
+        z-index: 3;
         border: solid black 1.5px;
     }
 
     @keyframes sidemenu {
         from {transform: translateY(-250px);}
         to {transform: translateY(0px);}
-    }
-
-    .side_menu1 {
-        display: block;
-        position: fixed;
-        right: 0px;
-        top: 0px;
-        width: fit-content;
-        background-color: whitesmoke;
-        margin: 0px;
-        padding-top: 50px;
-        float: right;
-        border: solid black 2px;
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 30px;
-        animation-name: 'anim';
-        animation-duration: 0.4s;
-        transition: all .4s;
-        display: none;
-        z-index: 2;
-        border: solid black 1.5px;
-    }
-
-    @keyframes anim {
-        from {transform: translateY(0px);}
-        to {transform: translateY(-250px);}
     }
 
     .side_menu li {
@@ -3841,9 +3815,18 @@ input::file-selector-button {
         margin: 25px;
     }
 
+    .domanda h2, .domanda2 h2, .domanda3 h2, .domanda4 h2, .domanda5 h2, .domanda6 h2, .domanda7 h2, .domanda8 h2, .domanda9 h2, .domanda10 h2 {
+         border: solid black 1px;
+    }
+
+    .domanda p, .domanda2 p, .domanda3 p, .domanda4 p, .domanda5 p, .domanda6 p, .domanda7 p, .domanda8 p, .domanda9 p, .domanda10 p {
+        border: solid black 1px;
+    }
+
     .opzioni .opzione1, .opzioni .opzione2, .opzioni1 .opzione3, .opzioni1 .opzione4 {
         margin: 25px 0px 25px 0px;
         height: fit-content;
+        border: solid black 1px;
     }
 
     .arrows {
@@ -3904,6 +3887,7 @@ input::file-selector-button {
     .img-text1 .img1, .img-text2 .img1 {
         width: 100%;
         margin: 20px 25px 20px 25px;
+        border: solid black 1px;
     }
 
     textarea {
@@ -3922,6 +3906,10 @@ input::file-selector-button {
         font-size: 13pt;
     }
 
+    .cat-img1, .cat-img2, .cat-img3 {
+        border: solid black 1px;
+    }
+
     .cat-img1 h4, .cat-img2 h4, .cat-img3 h4 {
         font-size: 13pt;
     }
@@ -3934,6 +3922,15 @@ input::file-selector-button {
     .session1 {
         font-weight: 500;
         font-size: 13pt;
+        border: solid black 1px;
+    }
+
+    .dom-icona, .opzioni2 .opzione1, .opzioni2 .opzione2, .opzioni2 .opzione3, .opzioni2 .opzione4 {
+        border: solid black 1px;
+    }
+
+    .lettera, .lettera1, .lettera2, .lettera3, .opzioni3 .lettera, .opzioni3 .lettera1, .opzioni3 .lettera2, .opzioni3 .lettera3 {
+        border: solid black 1px;
     }
 
 }

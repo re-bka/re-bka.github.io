@@ -23,7 +23,7 @@ livelloAaa = function () {
 
 livelloAa = function () {
     testo = document.querySelector("#testo_valori");
-    testo.innerHTML = 'I <b>valori minimi</b> del rapporto di contrasto del livello AA sono i seguenti:';
+    testo.innerHTML = 'I <b>valori minimi</b> del rapporto di contrasto del livello AA sono:';
     valore1 = document.querySelector('.valore_1');
     valore1.innerHTML = '<b>4.5.1</b>';
     valore2 = document.querySelector('.valore_2');
