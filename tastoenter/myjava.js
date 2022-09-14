@@ -124,21 +124,23 @@ sideMenu = function () {
 }
 showMenu = function () {
     menu = document.querySelector('.side_menu');
-    menu.style.animationName = 'sidemenu';
-    menu.style.display = 'block';
+    menu.style.top = '0px';
     iconaX = document.querySelector('.off');
     iconaX.style.display = 'block';
     iconaOn = document.querySelector('.block');
     iconaOn.style.display = 'none';
+
 }
 
 hideMenu = function () {
     menu = document.querySelector('.side_menu');
-    menu.style.display = 'none';
+    menu.style.top = '-250px';
     iconaX = document.querySelector('.off');
     iconaX.style.display = 'none';
     iconaOn = document.querySelector('.block');
     iconaOn.style.display = 'block';
+
+    menu.style.animationName = 'anim';
 }
 
 selectElement1 = function () {
@@ -232,7 +234,7 @@ showSol = function () {
     lettera3.style.display = 'none';
 
     sol1 = document.querySelector('.opzione1 p');
-    sol1.innerHTML = '<b>CORRETTO!</b><br>Rapporto di contrasto: <b>21</b><br>Il rapporto supera <br>il livello massimo AAA';
+    sol1.innerHTML = '<b>CORRETTO!</b><br>Rapporto di contrasto: <b>13.6</b><br>Il rapporto supera <br>il livello massimo AAA';
     sol1.style.textAlign = 'center';
     sol1.style.fontWeight = '600';
     sol1.style.fontSize = '12pt';
@@ -717,7 +719,7 @@ showSol5 = function () {
     sol4.innerHTML = "La sola icona non chiarisce l'azione all'utente.";
     sol4.style.fontSize = '12pt';
     sol4.style.paddingTop = '15px';
-    pulsante1 = document.querySelector('.opzione4 .cuore-vuoto');
+    pulsante1 = document.querySelector('.opzione4 .servizio');
     pulsante1.style.display = 'none';
 
     bottone = document.querySelector('.verifica .ghost');
@@ -771,7 +773,7 @@ hideSol5 = function () {
     sol4.innerHTML = '<b>Pulsante toggle</b>';
     sol4.style.fontSize = '12pt';
     sol4.style.paddingTop = '0px';
-    pulsante1 = document.querySelector('.opzione4 .cuore-vuoto');
+    pulsante1 = document.querySelector('.opzione4 .servizio');
     pulsante1.style.display = 'block';
 
     bottone = document.querySelector('.verifica .ghost');
@@ -1131,7 +1133,7 @@ image_input.addEventListener("change", function() {
   const reader = new FileReader();
   reader.addEventListener("load", () => {
     const uploaded_image = reader.result;
-    document.querySelector("#input-image").style.backgroundImage = `url(${uploaded_image})`;
+    document.querySelector(".cat-img1").style.backgroundImage = `url(${uploaded_image})`;
   });
   reader.readAsDataURL(this.files[0]);
 });
@@ -1142,7 +1144,7 @@ image_input1.addEventListener("change", function() {
   const reader = new FileReader();
   reader.addEventListener("load", () => {
     const uploaded_image = reader.result;
-    document.querySelector("#input-image1").style.backgroundImage = `url(${uploaded_image})`;
+    document.querySelector(".cat-img2").style.backgroundImage = `url(${uploaded_image})`;
   });
   reader.readAsDataURL(this.files[0]);
 });
@@ -1153,9 +1155,98 @@ image_input2.addEventListener("change", function() {
   const reader = new FileReader();
   reader.addEventListener("load", () => {
     const uploaded_image = reader.result;
-    document.querySelector("#input-image2").style.backgroundImage = `url(${uploaded_image})`;
+    document.querySelector(".cat-img3").style.backgroundImage = `url(${uploaded_image})`;
   });
   reader.readAsDataURL(this.files[0]);
 });
 
 
+
+showSol9 = function () {
+    input = document.querySelector('.cat-img1 input');
+    input.style.display = 'none';
+    dark = document.querySelector('.dark-session');
+    dark.style.display = 'block';
+
+    input = document.querySelector('.cat-img2 input');
+    input.style.display = 'none';
+    dark = document.querySelector('.dark-session1');
+    dark.style.display = 'block';
+
+    input = document.querySelector('.cat-img3 input');
+    input.style.display = 'none';
+    dark = document.querySelector('.dark-session2');
+    dark.style.display = 'block';
+
+    bottone = document.querySelector('.verifica .ghost');
+    bottone.style.display = 'none';
+    bottone1 = document.querySelector('.verifica .ghost1');
+    bottone1.style.display = 'block';
+
+    text = document.querySelector('.cat-img1 h4');
+    text.style.display = 'none';
+    text1 = document.querySelector('.cat-img2 h4');
+    text1.style.display = 'none';
+    text2 = document.querySelector('.cat-img3 h4');
+    text2.style.display = 'none';
+}
+
+
+hideSol9 = function () {
+    input = document.querySelector('.cat-img1 input');
+    input.style.display = 'block';
+    dark = document.querySelector('.dark-session');
+    dark.style.display = 'none';
+
+    input = document.querySelector('.cat-img2 input');
+    input.style.display = 'block';
+    dark = document.querySelector('.dark-session1');
+    dark.style.display = 'none';
+
+    input = document.querySelector('.cat-img3 input');
+    input.style.display = 'block';
+    dark = document.querySelector('.dark-session2');
+    dark.style.display = 'none';
+
+    bottone = document.querySelector('.verifica .ghost');
+    bottone.style.display = 'block';
+    bottone1 = document.querySelector('.verifica .ghost1');
+    bottone1.style.display = 'none';
+
+    text = document.querySelector('.cat-img1 h4');
+    text.style.display = 'block';
+    text1 = document.querySelector('.cat-img2 h4');
+    text1.style.display = 'block';
+    text2 = document.querySelector('.cat-img3 h4');
+    text2.style.display = 'block';
+}
+
+selectCat = function () {
+    opzione1 = document.querySelector('.prima');
+    opzione1.classList.add('prima1');
+
+    opzione2 = document.querySelector('.seconda');
+    opzione2.classList.remove('seconda1');
+    opzione3 = document.querySelector('.terza');
+    opzione3.classList.remove('terza1');
+}
+
+selectCat1 = function () {
+    opzione2 = document.querySelector('.seconda');
+    opzione2.classList.add('seconda1');
+
+    opzione1 = document.querySelector('.prima');
+    opzione1.classList.remove('prima1');
+    opzione3 = document.querySelector('.terza');
+    opzione3.classList.remove('terza1');
+}
+
+selectCat3 = function () {
+    opzione3 = document.querySelector('.terza');
+    opzione3.classList.add('terza1');
+
+    opzione1 = document.querySelector('.prima');
+    opzione1.classList.remove('prima1');
+    opzione2 = document.querySelector('.seconda');
+    opzione2.classList.remove('seconda1');
+}

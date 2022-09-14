@@ -5,9 +5,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>tasto enter</title>
     <link rel="stylesheet" href="mystyle.css" type="text/css">
-    <script type="text/javascript" src="myjava.js"></script>
     <meta charset="UTF-8">
 </head>
 <body id="contrasto">
@@ -37,24 +38,26 @@
             <div class="cont_cap">
                 <div class="num_cap">
                 <h4>05</h4></div>
-                <h5>Rappresentazione</h5>
+                <h5 id="rappr">Rappresentazione</h5>
             </div>
             <div class="progress-bar9">
                 <div class="bar"></div>
             </div>
             <div class="verifica">
                 <a class="verifica0" onclick="verifyOpt()">Verifica</a>
-                <a class="ghost" onclick="showSol8()">Vedi soluzioni</a><a class="ghost1" onclick="hideSol8()">Torna indietro</a>
+                <a class="ghost" onclick="showSol9()">Dark Session</a><a class="ghost1" onclick="hideSol9()">Torna indietro</a>
             </div>
         </div>
         <div class="domanda9">
             <h2>DOMANDA 9</h2>
-            <p>Vai sul tuo sito di immagini stock preferito e ricerca tre foto per la seguente categoria.
+            <p>Ricerca tre immagini per una (o ciascuna) delle categorie sottostanti.<br>Sii originale e prova ad evitare gli stereotipi!
             </p>
-            <h3>Business</h3>
+            <categorie><div class="prima" onclick="selectCat()">Business</div><div class="seconda" onclick="selectCat1()">Fashion</div><div class="terza" onclick="selectCat3()">Relationship</div></categorie>
         </div>
         <div class="categoria1">
-            <div class="cat-img1"><input type='file' id="input-image" accept="image/jpeg, image/png, image/jpg"></div><div class="cat-img2"><input type='file' id="input-image2" accept="image/jpeg, image/png, image/jpg"></div><div class="cat-img2"><input type='file' id="input-image1" accept="image/jpeg, image/png, image/jpg">
+            <div class="cat-img1"><div class="dark-session"><p class="if-cat">Se hai scelto la categoria</p><div class="prima">Business</div><p class="session1">È stato difficile trovare immagini di donne in questa categoria?</p></div><h4>Trascina qui la tua immagine</h4><input type='file' id="input-image" accept="image/jpeg, image/jpg"></div>
+            <div class="cat-img2"><div class="dark-session1"><p class="if-cat">Se hai scelto la categoria</p><div class="seconda">Fashion</div><p class="session1">I modelli e le modella delle tue immagini rispecchiano dei canoni di bellezza standardizzati?</p></div><h4>Trascina qui la tua immagine</h4><input type='file' id="input-image1" accept="image/jpeg, image/png, image/jpg"></div>
+            <div class="cat-img3"><div class="dark-session2"><p class="if-cat">Se hai scelto la categoria</p><div class="terza">Relationship</div><p class="session1">Durante la tua ricerca hai notato una carenza nella diversificazione delle relazioni, delle identità di genere o della sessualità?</p></div><h4>Trascina qui la tua immagine</h4><input type='file' id="input-image2" accept="image/jpeg, image/png, image/jpg"></div>
             </div>
         </div>
     </div>
@@ -78,6 +81,7 @@
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="myjava.js"></script>
 </body>
 </html>
     
