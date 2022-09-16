@@ -4,10 +4,8 @@
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="mystyle.css" type="text/css">
-    <title>tasto enter</title>
+    <title>tasto enter | Color Contrast Checker</title>
     </head>
 <body id="contrasto">
     <header>
@@ -15,7 +13,7 @@
         <div class="logo"><a href="index.html"><img src="logo_bw.svg" alt="logo" height="38px" class="logobw"><img src="logo_colore.svg" alt="logo bianco colorato" height="38px" class="logocolore"></a></div>
         <ul>
             <li class="contatti"><a href="#target" class="contatti">Contatti</a></li>
-            <li class="contenuti"><a href="#target1">Contenuti</a></li>
+            <li class="contenuti"><a href="index#target1">Contenuti</a></li>
             <li class="home"><a href="index.html">Home</a></li>
             <li class="ham_menu"><img src="ham.svg" width="25px" class="block" onclick="showMenu()"><img src="ham_off.svg" width="25px" class="off" onclick="hideMenu()"></li>
         </ul>
@@ -28,22 +26,70 @@
         </ul>
     </div>
     </header>
-    <main>
-        <div class="title">
-            <h1>Color Contrast Analyser</h1>
-            <h3>Calcola il rapporto di contrasto tra il colore di testo e il colore di fondo.</h3>
+    <main id='checker'>
+        <div class="title-contrast">
+            <h1>Color Contrast Checker</h1>
+            <p>Calcola il rapporto di contrasto tra il colore di testo<br> 
+                e il colore di sfondo.</p>
         </div>
         <div class="insert-color">
-            <div class="insert-back-color">
-                <label for="back-input"><b>Background color</b></label>
-                <div class="input1"><input type='text' placeholder="#FFFFFF" id="input-text-color" spellcheck="false"><input type="color" id="back-color" value="#FFFFFF"></div>
+        <div class="controls">
+            <div class="container">
+                <div class="controls__group">
+
+                        <div class="control">
+                            <label class="control__label" for="input-text-color"><b>Text Color</b></label><div class="inputs"><br>
+            <input type='text'  placeholder="#FFFFFF" id="input-text-color" spellcheck="false" onchange="changeColorInput()">
+            <input class="control__input" type="color" id="input-text" value="#ffffff"></div>
+                        </div>
+
+                        <div class="control">
+                            <label class="control__label" for="input-background"><b>Background Color</b></label><div class="inputs"><br>
+            <input type='text' placeholder="#000000" id="input-text-color1" onchange="changeColorInput()">
+            <input class="control__input" type="color" id="input-background" value="#000000"></div>
+                        </div>
+                </div>
             </div>
-            <div class="insert-text-color">
-                <label for="text-input"><b>Text color</b></label>
-                <div class="input2"><input type='text' placeholder="#000000" id="input-text-color1"><input type="color" id="text-color" value="text-input"></div>
+        </div>
+  <div id='preview' class="preview">
+    <div class="status">
+            <p class="container2">
+                <span id="status-text" class="status__text">
+       <strong id="status-ratio" class="status__ratio"></strong>
+       <div class="comment"><img src="corretto1.svg" id="correct" width="45px"><p id="livello-contrasto">OTTIMO!</p></div>
+                <p id="livello"><b>LIVELLO DI CONTRASTO:</b> <strong id="status-level" class="status__level"></strong></p>
+                </span>
+     <a href="contrasto.html" class="link"><u>Cosa significa?</u></a>
+            </p>
+        </div>
+            <div class="container1">
+      <h1 class="preview__text preview__text--large">TESTO ESEMPIO</h1><h2><b>Lorem Ipsum</b></h2>
+                <p class="preview__text preview__text--normal" aria-hidden="true">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta doloremque quasi tenetur labore accusamus, ad rerum vel nostrum eius dolorem repudiandae nam saepe. Id esse repellat blanditiis temporibus? Tempora?
+                </p>
             </div>
-    </div>
+        </div>
+    <div>
     </main>
-    <script type="text/javascript" src="myjava.js"></script>
+    <script src="myjava.js"></script>
+    <a name="target"></a>
+    <div class="sfondo_footer3">
+        <a name="target"></a>
+        <div class="footer1">
+            <div class="logo_footer"><a href="index.html"><img src="logo_bw_2.svg" alt="logo" height="38px" class="logobw_1"><img src="logo_bianco_colore.svg" alt="logo bianco colorato" height="38px" class="logocolore_1"></a></div>
+        <div class="aboutme">
+            <p class="cop1">© tastoenter 2022 | a cura di <b>Rebecca Buonamico</b></p>
+         <p class="cop2">© tastoenter 2022 <br>a cura di <b>Rebecca Buonamico</b></p>
+            </div>
+            <ul>
+                <li class="mail"><a href="mailto:rebecca.buonamico@outlook.it"><img src="mail_bianco.svg" alt="scrivimi una mail" width="40px"></a></li>
+                <li class="social"><a href=""><img src="instagram.svg" alt="contattami su instagram" height="32px"></a></li>
+                </ul>
+                <div class="tornasu">
+                    <a href="contrasto.html">Torna alla teoria</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
