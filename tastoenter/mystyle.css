@@ -123,6 +123,8 @@ main {
     position: relative;
     right: 350px;
     bottom: 170px;
+    animation: opacity 0.5s linear 1,
+    scale 0.5s linear 1;
     animation-name: rotate-script;
     animation-iteration-count: infinite;
     animation-duration: 10s;
@@ -140,6 +142,8 @@ main {
     position: relative;
     top: 180px;
     left: 400px;
+    animation: opacity 0.5s linear 1,
+    scale 0.5s linear 1;
     transition: all .4s;
     animation: sparkle 1s 1 alternate;
     animation-delay: 0.5s;
@@ -161,6 +165,8 @@ main {
     left: 30px;
     margin-left: 300px;
     margin-right: 300px;
+    animation: opacity 0.5s linear 1,
+    scale 0.5s linear 1;
 }
 
 .intro {
