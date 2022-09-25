@@ -151,6 +151,14 @@ selectElement1 = function () {
     verifica.classList.add('ghost2');
 }
 
+document.addEventListener("DOMContentLoaded", function(){
+    document.querySelector(".opzione1").addEventListener("keypress", function(event){
+        if(event.keyCode == 13){
+            document.querySelector(".opzione1").click();
+        }
+    });
+});
+
 selectElement3 = function () {
     opzione4 = document.querySelector('.opzione3');
     opzione4.classList.add('opzione-focus');
@@ -165,6 +173,14 @@ selectElement3 = function () {
     verifica = document.querySelector('.ghost-dis');
     verifica.classList.add('ghost2');
 }
+
+document.addEventListener("DOMContentLoaded", function(){
+    document.querySelector(".opzione2").addEventListener("keypress", function(event){
+        if(event.keyCode == 13){
+            document.querySelector(".opzione2").click();
+        }
+    });
+});
 
 selectElement2 = function () {
     opzione1 = document.querySelector('.opzione2');
@@ -181,6 +197,14 @@ selectElement2 = function () {
     verifica.classList.add('ghost2');
 }
 
+document.addEventListener("DOMContentLoaded", function(){
+    document.querySelector(".opzione3").addEventListener("keypress", function(event){
+        if(event.keyCode == 13){
+            document.querySelector(".opzione3").click();
+        }
+    });
+});
+
 selectElement4 = function () {
     opzione4 = document.querySelector('.opzione4');
     opzione4.classList.add('opzione-focus');
@@ -196,6 +220,13 @@ selectElement4 = function () {
     verifica.classList.add('ghost2');
 }
 
+document.addEventListener("DOMContentLoaded", function(){
+    document.querySelector(".opzione4").addEventListener("keypress", function(event){
+        if(event.keyCode == 13){
+            document.querySelector(".opzione4").click();
+        }
+    });
+});
 
 verifyOpt = function () {
     bollino = document.querySelector('.bollino-quiz');
@@ -215,6 +246,14 @@ verifyOpt = function () {
     lettera3 = document.querySelector('.lettera3');
     lettera3.style.display = 'none';
 }
+
+document.addEventListener("DOMContentLoaded", function(){
+    document.querySelector(".verifica0").addEventListener("keypress", function(event){
+        if(event.keyCode == 13){
+            document.querySelector(".verifica0").click();
+        }
+    });
+});
 
 showSol = function () {
     bollino = document.querySelector('.bollino-quiz');
@@ -268,6 +307,14 @@ showSol = function () {
     bottone1 = document.querySelector('.verifica .ghost1');
     bottone1.style.display = 'block';
 }
+
+document.addEventListener("DOMContentLoaded", function(){
+    document.querySelector(".ghost-dis").addEventListener("keypress", function(event){
+        if(event.keyCode == 13){
+            document.querySelector(".ghost-dis").click();
+        }
+    });
+});
 
 hideSol = function () {
     bollino = document.querySelector('.bollino-quiz');
@@ -334,7 +381,13 @@ hideSol = function () {
     opzione1.classList.remove('opzione-focus');  
 }
 
-
+document.addEventListener("DOMContentLoaded", function(){
+    document.querySelector(".ghost1").addEventListener("keypress", function(event){
+        if(event.keyCode == 13){
+            document.querySelector(".ghost1").click();
+        }
+    });
+});
 
 
 showSol2 = function () {
@@ -376,6 +429,7 @@ showSol2 = function () {
     bottone1 = document.querySelector('.verifica .ghost1');
     bottone1.style.display = 'block';
 }
+
 
 hideSol2 = function () {
     bollino = document.querySelector('.bollino-quiz');
@@ -868,33 +922,36 @@ hideSol6 = function () {
     lettera3.style.display = 'block';
 
     sol1 = document.querySelector('.opzione1 p');
-    sol1.innerHTML = '<b>Pulsante classico</b>';
-    sol1.style.fontSize = '12pt';
+    sol1.innerHTML = '<b>Rubik</b>';
+    sol1.style.fontSize = '14pt';
     sol1.style.paddingTop = '0px';
-    sol1.style.fontFamily = "'HK Grotesk', sans-serif";
+    sol1.style.fontFamily = "'Rubik', sans-serif";
     input = document.querySelector('.opzione1 input');
     input.style.display = 'block';
 
     sol2 = document.querySelector('.opzione2 p');
-    sol2.innerHTML = '<b>Pulsante ghost</b>';
-    sol2.style.fontSize = '12pt';
+    sol2.innerHTML = '<b>Pacifico</b>';
+    sol2.style.fontSize = '14pt';
     sol2.style.paddingTop = '0px';
+    sol2.style.fontFamily = "'Pacifico', cursive";
     input = document.querySelector('.opzione2 input');
     input.style.display = 'block';
 
     
     sol3 = document.querySelector('.opzione3 p');
-    sol3.innerHTML = '<b>Pulsante di testo</b>';
-    sol3.style.fontSize = '12pt';
+    sol3.innerHTML = '<b>Bebas Neue</b>';
+    sol3.style.fontSize = '14pt';
     sol3.style.paddingTop = '0px';
+    sol3.style.fontFamily = "'Bebas Neue', sans-serif";
     input = document.querySelector('.opzione3 input');
     input.style.display = 'block';
 
 
     sol4 = document.querySelector('.opzione4 p');
-    sol4.innerHTML = '<b>Pulsante toggle</b>';
-    sol4.style.fontSize = '12pt';
+    sol4.innerHTML = '<b>Noto Sans</b>';
+    sol4.style.fontSize = '14pt';
     sol4.style.paddingTop = '0px';
+    sol4.style.fontFamily = "'Noto Sans', sans-serif";
     input = document.querySelector('.opzione4 input');
     input.style.display = 'block';
 

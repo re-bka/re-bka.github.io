@@ -71,12 +71,42 @@ nav li:hover {
     box-shadow: inset 0px -4px 0px #F15A24;
 }
 
+.home a:focus {
+    box-shadow: inset 0px -4px 0px #F15A24;
+    outline: none;
+    width: 100%;
+    margin: auto;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-bottom: 16px;
+}
+
 .contenuti:hover {
     box-shadow: inset 0px -4px 0px #85B3FF;
 }
 
+.contenuti a:focus {
+    box-shadow: inset 0px -4px 0px #85B3FF;
+    outline: none;
+    width: 100%;
+    margin: auto;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 16px;
+}
+
 li.contatti:hover {
     box-shadow: inset 0px -4px 0px #e01e77;
+}
+
+li.contatti a:focus {
+    box-shadow: inset 0px -4px 0px #e01e77;
+    outline: none;
+    width: 100%;
+    margin: auto;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 16px;
 }
 
 .ham_menu {
@@ -104,6 +134,7 @@ li.contatti:hover {
 .logo:hover {
     background-color: transparent;
 }
+
 
 main {
     display: flex;
@@ -233,11 +264,24 @@ pulsanti {
     background-color: white;
 }
 
+.ghost:focus, .ghost1:focus {
+    background-color: white;
+    outline: solid #F15A24 2px;
+}
+
 .cta:hover, .cta-quiz:hover {
     background-color: #F15A24;
     box-shadow: -3px 3px 0px black;
     color: black;
     border: solid black 2px;
+    font-weight: 500;
+}
+
+.cta:focus, .cta-quiz:focus {
+    background-color: #F15A24;
+    box-shadow: -3px 3px 0px black;
+    color: black;
+    outline: none;
     font-weight: 500;
 }
 
@@ -319,8 +363,30 @@ pulsanti {
     color: black;
 }
 
+.elenco .cta:focus {
+    color: black;
+}
+
 .contrasto:hover, .etichette:hover, .pulsanti:hover, .testo:hover, .rappresentazione:hover, .consigli:hover {
     transform: translateY(-10px);
+}
+
+.contrasto a:focus, .etichette a:focus, .pulsanti a:focus, .testo a:focus, .rappresentazione a:focus, .consigli a:focus {
+    outline: none;
+    text-decoration: underline;
+}
+
+.elenco a:active, .elenco a:hover {
+    text-decoration: none;
+}
+
+.elenco .cta:focus {
+    text-decoration: none;
+}
+
+
+.contrasto h3 a:active, .etichette h3 a:active, .pulsanti h3 a:active, .testo h3 a:active, .rappresentazione h3 a:active, .consigli h3 a:active {
+    text-decoration: none;
 }
 
 .contrasto:active, .etichette:active, .pulsanti:active, .testo:active, .rappresentazione:active, .consigli:active {
@@ -418,20 +484,45 @@ pulsanti {
     background-color: #FFC900;
 }
 
+.bottone2 .cta:focus {
+    background-color: #FFC900;
+    color: black;
+}
+
 .bottone3 .cta:hover {
     background-color: #85B3FF;
+}
+
+.bottone3 .cta:focus {
+    background-color: #85B3FF;
+    color: black;
 }
 
 .bottone4 .cta:hover {
     background-color: #e01e77;
 }
 
+.bottone4 .cta:focus {
+    background-color: #e01e77;
+    color: black;
+}
+
 .bottone5 .cta:hover {
     background-color: #F15A24;
 }
 
+.bottone5 .cta:focus {
+    background-color: #F15A24;
+    color: black;
+}
+
 .bottone6 .cta:hover {
     background-color: #FFC900;
+}
+
+.bottone6 .cta:focus {
+    background-color: #FFC900;
+    color: black;
 }
 
 .bottoni {
@@ -980,9 +1071,17 @@ ul li .link {
     background-color: white;
 }
 
+.quiz .cta:focus {
+    background-color: white;
+}
+
 /*ETICHETTE*/
 
 .capitolo2 .cta:hover {
+    background-color: #FFC900;
+}
+
+.capitolo2 .cta:focus {
     background-color: #FFC900;
 }
 
@@ -1081,6 +1180,10 @@ input[type=text] {
     background-color: white;
 }
 
+.quiz2 .cta:focus {
+    background-color: white;
+}
+
 .teoria3 .immagine1 img {
     right: 130px;
 }
@@ -1119,6 +1222,10 @@ label {
 }
 
 .capitolo3 .cta:hover {
+    background-color: #85B3FF;
+}
+
+.capitolo3 .cta:focus {
     background-color: #85B3FF;
 }
 
@@ -1346,6 +1453,10 @@ label {
     background-color: #85B3FF;
 }
 
+.quiz3 .cta:focus {
+    background-color: #85B3FF;
+}
+
 
 /*TESTO*/
 
@@ -1353,6 +1464,9 @@ label {
     background-color: #e01e77;
 }
 
+.capitolo_1 .cta:focus {
+    background-color: #e01e77;
+}
 
 .capitolo_1 {
     display: flex;
@@ -1512,7 +1626,15 @@ mono {
     background-color: #e01e77;
 }
 
+.quiz4 .cta:focus {
+    background-color: #e01e77;
+}
+
 .capitolo6 .cta:hover {
+    background-color: #FFC900;
+}
+
+.capitolo6 .cta:focus {
     background-color: #FFC900;
 }
 
@@ -1867,6 +1989,10 @@ mono {
     background-color: #FFC900;
 }
 
+.quiz6 .cta:focus {
+    background-color: #FFC900;
+}
+
 .cont_up, .cont_up2 {
     display: flex;
     justify-content: space-between;
@@ -2132,11 +2258,13 @@ mono {
     font-weight: 500;
 }
 
-.disattivato {
-    pointer-events: none;
-    cursor: default;
-    background-color: #8b8b8b;
-    border: solid #8b8b8b 2px;
+.verifica1:focus {
+    background-color: #F15A24;
+    box-shadow: -3px 3px 0px black;
+    color: black;
+    border: solid black 2px;
+    font-weight: 500;
+    outline: none;
 }
 
 .domanda, .domanda2, .domanda3, .domanda4, .domanda5, .domanda6, .domanda7, .domanda8, .domanda9, .domanda10 {
@@ -2660,6 +2788,15 @@ textarea {
     text-decoration: none;
 }
 
+.ghost-dis:hover {
+    background-color: white;
+}
+
+.ghost-dis:focus {
+    background-color: white;
+    outline: solid #F15A24 2px;
+}
+
 .ghost2 {
     border: solid black 2px;
     color: black;
@@ -3021,6 +3158,11 @@ input::file-selector-button {
       border: none;
       padding: 0px;
       border-radius: 30px;
+  }
+
+  .opzione1:focus, .opzione2:focus, .opzione3:focus, .opzione4:focus {
+    box-shadow: -5px 5px 0px black;
+    outline: none;
   }
 
 /*MEDIA QUERIES*/
