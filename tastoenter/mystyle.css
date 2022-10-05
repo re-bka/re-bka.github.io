@@ -191,7 +191,7 @@ main {
     background-color: whitesmoke;
     border-radius: 45px;
     padding: 45px 80px;
-    box-shadow: -15px 15px black;
+    box-shadow: 15px 15px black;
     position: relative;
     left: 30px;
     margin-left: 300px;
@@ -232,21 +232,20 @@ enf {
 
 pulsanti {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 80%;
 }
 
 .cta, .cta-quiz {
     background-color: black;
     color: white;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14pt;
     text-decoration: none;
     padding: 9px 18px;
     border-radius: 8px;
-    margin-right: 50px;
     border: solid black 2px;
     transition: all .4s;
-
 }
 
 .ghost, .ghost1 {
@@ -271,7 +270,7 @@ pulsanti {
 
 .cta:hover, .cta-quiz:hover {
     background-color: #F15A24;
-    box-shadow: -3px 3px 0px black;
+    box-shadow: 3px 3px 0px black;
     color: black;
     border: solid black 2px;
     font-weight: 500;
@@ -279,7 +278,7 @@ pulsanti {
 
 .cta:focus, .cta-quiz:focus {
     background-color: #F15A24;
-    box-shadow: -3px 3px 0px black;
+    box-shadow: 3px 3px 0px black;
     color: black;
     outline: none;
     font-weight: 500;
@@ -344,7 +343,7 @@ pulsanti {
     border: solid black 2px;
     width: 400px;
     height: 400px;
-    box-shadow: -12px 12px 0px #F15A24;
+    box-shadow: 12px 12px 0px #F15A24;
     overflow: hidden;
     margin-left: 1350px;
     transition: all .4s;
@@ -401,7 +400,7 @@ pulsanti {
     border: solid black 2px;
     width: 400px;
     height: 400px;
-    box-shadow: -12px 12px 0px #FFC900;
+    box-shadow: 12px 12px 0px #FFC900;
     margin-left: 70px;
     transition: all .4s;
 }
@@ -411,7 +410,7 @@ pulsanti {
     border: solid black 2px;
     width: 400px;
     height: 400px;
-    box-shadow: -12px 12px 0px #85B3FF;
+    box-shadow: 12px 12px 0px #85B3FF;
     margin-left: 70px;
     transition: all .4s;
 }
@@ -421,7 +420,7 @@ pulsanti {
     border: solid black 2px;
     width: 400px;
     height: 400px;
-    box-shadow: -12px 12px 0px #e01e77;
+    box-shadow: 12px 12px 0px #e01e77;
     margin-left: 70px;
     transition: all .4s;
 }
@@ -431,7 +430,7 @@ pulsanti {
     border: solid black 2px;
     width: 400px;
     height: 400px;
-    box-shadow: -12px 12px 0px #F15A24;
+    box-shadow: 12px 12px 0px #F15A24;
     margin-left: 70px;
     transition: all .4s;
 }
@@ -441,7 +440,7 @@ pulsanti {
     border: solid black 2px;
     width: 400px;
     height: 400px;
-    box-shadow: -12px 12px 0px #FFC900;
+    box-shadow: 12px 12px 0px #FFC900;
     margin-left: 70px;
     transition: all .4s;
 }
@@ -681,7 +680,7 @@ pulsanti {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    border-bottom: solid black 1px;
+    border-bottom: solid black 2px;
     padding: 0px 100px 150px 150px;
 }
 
@@ -710,6 +709,7 @@ pulsanti {
 .capitolo1 li, .capitolo2 li, .capitolo3 li, .capitolo4 li, .capitolo5 li, .capitolo6 li {
     display: inline;
     list-style: none;
+    padding-right: 50px;
 }
 
 .capitolo1 ul, .capitolo2 ul, .capitolo3 ul, .capitolo4 ul, .capitolo5 ul, .capitolo6 ul {
@@ -771,7 +771,6 @@ pulsanti {
 }
 
 h3 i {
-    font-family: 'Piazzolla', serif;
     font-weight: 500;
 }
 
@@ -791,7 +790,7 @@ h3 i {
 
 .testo1 li {
     font-size: 18pt;
-    font-family: 'Piazzolla', serif;
+    font-weight: 400;
 }
 
 ul li .link {
@@ -925,7 +924,7 @@ ul li .link {
 
 .sezione2 h3 {
     background-color: #FFC900;
-    box-shadow: -5px 5px 0px black;
+    box-shadow: 5px 5px 0px black;
     font-size: 25pt;
     margin-top: 0px;
     padding: 5px 20px;
@@ -1157,6 +1156,7 @@ input[type=text] {
 
 .corretto img, .attenzione img {
     padding-right: 8px;
+    width: 35px;
 }
 
 .quiz2 {
@@ -1204,11 +1204,11 @@ label {
     cursor: pointer;
 }
 
-.pulsante_up {
+.pulsante_up1 {
     cursor: pointer;
 }
 
-.illustrazione3:active .pulsante_up {
+.illustrazione3:active .pulsante_up1 {
     display: none;
 }
 
@@ -1310,7 +1310,7 @@ label {
     font-size: 35pt;
     border-radius: 50px;
     width: fit-content;
-    box-shadow: -6px 8px 0px black;
+    box-shadow: 6px 8px 0px black;
 }
 
 .buttons .cta {
@@ -1667,7 +1667,7 @@ mono {
 .sezioni5 .sezione1 h3 {
     border: solid black 2px;
     border-radius: 60px;
-    box-shadow: -5px 5px 0px black;
+    box-shadow: 5px 5px 0px black;
     background-color: whitesmoke;
     padding: 20px 40px;
     width: fit-content;
@@ -1686,7 +1686,7 @@ mono {
 
 .img-esempio {
     border-radius: 35px;
-    width: 550px;
+    width: auto;
     height: 350px;
     margin: 20px;
     margin-top: -40px;
@@ -1702,7 +1702,7 @@ mono {
     background-color: white;
     border: solid black 2px;
     border-radius: 35px;
-    width: 550px;
+    width: auto;
     height: 350px;
     margin: 20px;
     margin-top: -40px;
@@ -1772,14 +1772,13 @@ mono {
     z-index: 1;
     position: relative;
     left: 32px;
-    filter: drop-shadow(-5px 5px 0px black);
 }
 
 .title2 h4 {
     background-color: whitesmoke;
     padding: 20px 40px;
     font-size: 20pt;
-    box-shadow: -5px 5px 0px black;
+    box-shadow: 5px 5px 0px black;
     border-radius: 20px;
     border: solid black 2px;
     margin: 0px;
@@ -1871,7 +1870,7 @@ mono {
     border: solid black 2px;
     width: 500px;
     height: 500px;
-    box-shadow: -10px 10px 0px black;
+    box-shadow: 10px 10px 0px black;
     border-radius: 40px;
     display: flex;
     justify-content: center;
@@ -1884,7 +1883,7 @@ mono {
     border: solid black 2px;
     width: 500px;
     height: 500px;
-    box-shadow: -10px 10px 0px black;
+    box-shadow: 10px 10px 0px black;
     border-radius: 40px;
     display: flex;
     justify-content: center;
@@ -1897,7 +1896,7 @@ mono {
     border: solid black 2px;
     width: 500px;
     height: 500px;
-    box-shadow: -10px 10px 0px black;
+    box-shadow: 10px 10px 0px black;
     border-radius: 40px;
     display: flex;
     justify-content: center;
@@ -1910,7 +1909,7 @@ mono {
     border: solid black 2px;
     width: 500px;
     height: 500px;
-    box-shadow: -10px 10px 0px black;
+    box-shadow: 10px 10px 0px black;
     border-radius: 40px;
     display: flex;
     justify-content: center;
@@ -2252,7 +2251,7 @@ mono {
 
 .verifica1:hover {
     background-color: #F15A24;
-    box-shadow: -3px 3px 0px black;
+    box-shadow: 3px 3px 0px black;
     color: black;
     border: solid black 2px;
     font-weight: 500;
@@ -2260,7 +2259,7 @@ mono {
 
 .verifica1:focus {
     background-color: #F15A24;
-    box-shadow: -3px 3px 0px black;
+    box-shadow: 3px 3px 0px black;
     color: black;
     border: solid black 2px;
     font-weight: 500;
@@ -2292,7 +2291,7 @@ mono {
     font-weight: 700;
     font-size: 20pt;
     border: solid black 2px;
-    box-shadow: -3px 3px 0px black;
+    box-shadow: 3px 3px 0px black;
     border-radius: 50px;
     padding: 8px 16px;
     text-align: center;
@@ -2419,7 +2418,7 @@ mono {
 }
 
 .opzione-focus{
-    box-shadow: -5px 5px 0px black;
+    box-shadow: 5px 5px 0px black;
     transition: all ease-in-out .4s;
 }
 
@@ -2558,7 +2557,7 @@ mono {
 
 .opzioni2 .lettera {
     position: relative;
-    top: 1px;
+    top: 0px;
 }
 
 .opzioni2 .lettera3 {
@@ -2823,7 +2822,7 @@ textarea {
     font-weight: 600;
     border: solid black 2px;
     cursor: pointer;
-    box-shadow: -2px 2px 0px transparent;
+    box-shadow: 2px 2px 0px transparent;
 }
 
 .prima, .seconda, .terza {
@@ -2838,49 +2837,49 @@ textarea {
     font-weight: 600;
     border: solid black 2px;
     cursor: pointer;
-    box-shadow: -2px 2px 0px transparent;
+    box-shadow: 2px 2px 0px transparent;
     transition: all 0.4s;
     font-size: 12pt;
 }
 
 .prima:hover {
     background-color: #85B3FF;
-    box-shadow: -2px 2px 0px black;
+    box-shadow: 2px 2px 0px black;
     transition: all 0.4s;
     color: black;
 }
 
 .seconda:hover {
     background-color: #FFC900;
-    box-shadow: -2px 2px 0px black;
+    box-shadow: 2px 2px 0px black;
     transition: all 0.4s;
     color: black;
 }
 
 .terza:hover {
     background-color: #e01e77;
-    box-shadow: -2px 2px 0px black;
+    box-shadow: 2px 2px 0px black;
     transition: all 0.4s;
     color: black;
 }
 
 .prima1 {
     background-color: #85B3FF;
-    box-shadow: -2px 2px 0px black;
+    box-shadow: 2px 2px 0px black;
     transition: all 0.4s;
     color: black;
 }
 
 .seconda1 {
     background-color: #FFC900;
-    box-shadow: -2px 2px 0px black;
+    box-shadow: 2px 2px 0px black;
     transition: all 0.4s;
     color: black;
 }
 
 .terza1 {
     background-color: #e01e77;
-    box-shadow: -2px 2px 0px black;
+    box-shadow: 2px 2px 0px black;
     transition: all 0.4s;
     color: black;
 }
@@ -2888,21 +2887,21 @@ textarea {
 .dark-session .prima {
     background-color: #85B3FF;
     color: black;
-    box-shadow: -2px 2px black;
+    box-shadow: 2px 2px black;
     margin: auto;
 }
 
 .dark-session1 .seconda {
     background-color: #FFC900;
     color: black;
-    box-shadow: -2px 2px black;
+    box-shadow: 2px 2px black;
     margin: auto;
 }
 
 .dark-session2 .terza {
     background-color: #e01e77;
     color: black;
-    box-shadow: -2px 2px black;
+    box-shadow: 2px 2px black;
     margin: auto;
 }
 
@@ -3025,7 +3024,7 @@ input::file-selector-button {
     gap: 20px;
     padding: 25px;
     border: solid black 2px;
-    box-shadow: -8px 8px 0px black;
+    box-shadow: 8px 8px 0px black;
     width: 100%;
   }
 
@@ -3127,7 +3126,7 @@ input::file-selector-button {
   #input-background, #input-text {
       padding: 0px;
       margin: 0px;
-      margin-left: -42px;
+      margin-left: -41px;
       height: 35px;
       width: 35px;
       border: none;
@@ -3161,7 +3160,7 @@ input::file-selector-button {
   }
 
   .opzione1:focus, .opzione2:focus, .opzione3:focus, .opzione4:focus {
-    box-shadow: -5px 5px 0px black;
+    box-shadow: 5px 5px 0px black;
     outline: none;
   }
 
@@ -3283,7 +3282,7 @@ input::file-selector-button {
 
     .flex-container {
         padding: 20pt;
-        box-shadow: -5px 5px 0px black;
+        box-shadow: 5px 5px 0px black;
         left: 5px;
         display: flex;
         flex-wrap: wrap;
@@ -3354,27 +3353,27 @@ input::file-selector-button {
     }
 
     .etichette {
-        box-shadow: -8px 8px 0px #FFC900;
+        box-shadow: 8px 8px 0px #FFC900;
     }
 
     .contrasto {
-        box-shadow: -8px 8px 0px #F15A24;
+        box-shadow: 8px 8px 0px #F15A24;
     }
 
     .pulsanti {
-        box-shadow: -8px 8px 0px #85B3FF;
+        box-shadow: 8px 8px 0px #85B3FF;
     }
 
     .testo {
-        box-shadow: -8px 8px 0px #e01e77;
+        box-shadow: 8px 8px 0px #e01e77;
     }
 
     .rappresentazione {
-        box-shadow: -8px 8px 0px #F15A24;
+        box-shadow: 8px 8px 0px #F15A24;
     }
 
     .consigli {
-        box-shadow: -8px 8px 0px #FFC900;
+        box-shadow: 8px 8px 0px #FFC900;
         margin-bottom: 30px;
     }
 
@@ -3621,7 +3620,7 @@ input::file-selector-button {
 
     .sezione2 h3{
         font-size: 15pt;
-        box-shadow: -3px 3px 0px black;
+        box-shadow: 3px 3px 0px black;
         border-bottom: solid black 1px;
     }
 
@@ -4011,7 +4010,7 @@ input::file-selector-button {
         font-size: 16pt;
         padding: 8px 16px;
         text-align: center;
-        box-shadow: -5px 5px 0px black;
+        box-shadow: 5px 5px 0px black;
         border: solid black 1px;
     }
 
@@ -4074,7 +4073,7 @@ input::file-selector-button {
 
     .sub, .linguaggio, .altext, .tastiera {
         margin: 30px 15px 30px 15px;
-        box-shadow: -5px 5px 0px black;
+        box-shadow: 5px 5px 0px black;
         border: solid black 1px;
     }
 
@@ -4266,8 +4265,8 @@ input::file-selector-button {
 
     .insert-color {
         width: 100%;
-        margin-left: 10px;
-        margin-right: 5px;
+        margin-left: 5px;
+        margin-right: 10px;
         padding: 15px;
     }
 
