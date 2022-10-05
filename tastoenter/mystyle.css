@@ -771,6 +771,7 @@ pulsanti {
 }
 
 h3 i {
+    font-family: 'Piazzolla', serif;
     font-weight: 500;
 }
 
@@ -790,11 +791,11 @@ h3 i {
 
 .testo1 li {
     font-size: 18pt;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 ul li .link {
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .immagine1 {
@@ -898,7 +899,7 @@ ul li .link {
 .livelli {
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
     margin: 0px;
 }
 
@@ -3126,7 +3127,7 @@ input::file-selector-button {
   #input-background, #input-text {
       padding: 0px;
       margin: 0px;
-      margin-left: -41px;
+      margin-left: -42px;
       height: 35px;
       width: 35px;
       border: none;
@@ -4265,8 +4266,8 @@ input::file-selector-button {
 
     .insert-color {
         width: 100%;
-        margin-left: 5px;
-        margin-right: 10px;
+        margin-left: 10px;
+        margin-right: 5px;
         padding: 15px;
     }
 
