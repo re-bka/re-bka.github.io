@@ -1408,16 +1408,16 @@ changeColorInput = function () {
      statusRatio.style.backgroundColor = 'red';
      statusRatio.style.color = 'white';
      livelloContrasto.innerText = 'SCARSO!'
-     corretto.src = 'sbagliato.svg';
+     corretto.src = 'sbagliato_1.svg';
     } else if (ratio < 4.5) {
      statusRatio.style.backgroundColor = 'orange';
      livelloContrasto.innerText = 'BUONO!'
-     corretto.src = 'attenzione_cerchio.svg';
+     corretto.src = 'attenzione_cerchio1.svg';
     } else {
       statusRatio.style.backgroundColor = "green";
       statusRatio.style.color = 'white';
       livelloContrasto.innerText = 'OTTIMO!'
-      corretto.src = 'corretto.svg';
+      corretto.src = 'corretto_1_1.svg';
     }
   }
   
