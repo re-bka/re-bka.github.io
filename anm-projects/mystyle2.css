@@ -3,7 +3,7 @@ body {
     background-color:rgb(238, 238, 238);
     color: black;
     font-family: "Schibsted Grotesk", Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 10pt;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,6 +98,14 @@ body {
 @media screen and (min-width: 700px) {
     .folders {
         width: 60%;
+    }
+
+    body {
+        font-size: 8pt;
+    }
+
+    .bar p {
+        font-size: 8pt;
     }
 }
 
