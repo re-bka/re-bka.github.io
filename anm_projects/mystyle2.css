@@ -1,0 +1,108 @@
+
+body {
+    background-color:rgb(238, 238, 238);
+    color: black;
+    font-family: "Schibsted Grotesk", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.folders {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color:white;
+    width:90%;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px rgb(195, 195, 195);
+}
+
+.bar {
+    background-image: linear-gradient(rgb(236, 236, 236), rgb(221, 221, 221));
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+}
+
+.circle, .circle2, .circle3 {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin-right: 8px;
+}
+
+.bar p {
+    padding: 0px;
+    font-family: "Schibsted Grotesk", Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    margin: auto;
+    padding-right: 50px;
+}
+
+.circle {
+    background-color: #FF6159;
+}
+
+.circle2 {
+    background-color: #FFBE2F
+}
+
+.circle3 {
+    background-color: #28C840;
+    margin-right: 0px;
+}
+
+.items1, .items2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.element1 {
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.element1:hover {
+    background-color: rgb(235, 235, 235);
+    border: #aeaeae;
+    border-radius: 5px;
+}
+
+.element1 a {
+    color: black;
+    text-decoration: none;
+}
+
+.copyright {
+    width: 100%;
+    font-size: 8pt;
+    text-align: center;
+    height: fit-content;
+    display: flex;
+    align-self: end;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+@media screen and (min-width: 700px) {
+    .folders {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .folders {
+        width: 45%;
+    }
+}
