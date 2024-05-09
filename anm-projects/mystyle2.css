@@ -34,8 +34,6 @@ html {
 
 ::-webkit-scrollbar {
     width: 15px;
-    box-shadow: 1px 1px 0px rgb(37, 37, 37);
-    border: gray solid 2px;
   }
   
   /* Track */
@@ -46,13 +44,14 @@ html {
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #888;
-    box-shadow: inset 1px 1px 0px white, 1px 1px 0px rgb(38, 38, 38);
+    box-shadow: inset 1px 1px 1px white, 1px 1px 0px rgb(56, 56, 56);
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+  
 
 .folder-bar img {
     height: 17px;
@@ -96,7 +95,9 @@ html {
     flex-wrap: wrap;
     overflow-y: auto;
     padding-bottom: 20px;
+    
 }
+
 
 .element1 {
     text-align: center;
