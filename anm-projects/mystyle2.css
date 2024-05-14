@@ -1,6 +1,6 @@
 
 body {
-    background-color:rgb(232, 232, 232);
+    background-color:black;
     color: black;
     font-family: "Roboto Mono", monospace;
     font-size: 11pt;
@@ -10,16 +10,22 @@ body {
     flex-wrap: wrap;
 }
 
-.folders, .folders1 {
+.folders0 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.folders, .folders1, .folders2, .loading, .folders3 {
     display: flex;
     flex-direction: column ;
     align-items: center;
     margin: 20px;
     background-color:white;
     border: rgb(177, 177, 177) 3px solid;
-    width:90%;
     height: 70%;
-    box-shadow: 2px 2px 2px rgb(37,37,37), inset 2px 2px 2px rgb(37, 37, 37), -2px -2px 0px rgb(240, 240, 240);
+    box-shadow:inset 2px 2px 2px rgb(37, 37, 37), -1px 0px 0px rgb(255, 255, 255), inset -1px -1px 0px rgb(148, 148, 148);
 }
 
 .folders1 {
@@ -27,6 +33,75 @@ body {
     height: fit-content;
 }
   
+.loading {
+    width: 216px;
+    background-color: rgb(177, 177, 177);
+    height: fit-content;
+    align-self: flex-end;
+}
+
+.loader {
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.element-loader {
+    background-color: #001280;
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    height: 25px;
+    margin: 1px;
+    animation-duration: 0.1s;
+  animation-duration: 0.2s;
+  animation-delay: 0.5s;
+  animation-name: animate-fade;
+  animation-fill-mode: backwards;
+}
+
+.delay-1 {
+    animation-delay: 0.6s;
+    }
+    .delay-2 {
+    animation-delay: 0.7s;
+    }
+    .delay-3 {
+    animation-delay: 0.8s;
+    }
+    .delay-4 {
+    animation-delay: 1.2s;
+    }
+    .delay-5 {
+    animation-delay: 1.5s;
+    }
+    .delay-6 {
+    animation-delay: 1.7s;
+    }
+    .delay-7 {
+    animation-delay: 1.8s;
+    }
+    .delay-8 {
+    animation-delay: 2s;
+    }
+    .delay-9 {
+    animation-delay: 2.3s;
+    }
+    .delay-10 {
+    animation-delay: 2.5s;
+    }
+
+.animate.fade {
+    animation-name: animate-fade;
+    animation-timing-function: ease;
+  }
+  @keyframes animate-fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
 html {
     overflow: scroll;
     overflow-x: hidden;
@@ -69,14 +144,14 @@ html {
 
 .bar {
     background-color: #001280;
-    border-bottom:rgb(195, 195, 195) 3px solid;
+    border-bottom:rgb(177, 177, 177) 3px solid;
     display: flex;
     width: 100%;
     height: fit-content;
     flex: none;
     justify-content: space-between;
     color: white;
-    box-shadow: 2px 2px 2px rgb(37, 37, 37);
+    box-shadow:-1px -1px 0px rgb(205, 205, 205);
     z-index: 1;
 }
 
@@ -124,11 +199,39 @@ html {
     align-self: end;
     margin-bottom: 20px;
     justify-content: center;
+    color: white;
+}
+
+.abstract-bar {
+    height: 20px;
+    font-size: 9pt;
+    background-color: rgb(177, 177, 177);
+    width: 100%;
+    border-bottom:rgb(177, 177, 177) 3px solid;
+    box-shadow: 0px 2px 2px rgb(37, 37, 37)
+}
+
+.abstract-bar b {
+    display: flex;
+}
+
+.abstract-bar p {
+    margin: 0px 5px;
 }
 
 .abstract {
     padding: 20px;
 }
+
+.folders2, .folders3 {
+    width: 80%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+video::-webkit-media-controls {
+    display: none;
+  }
 
 .blink {
     animation: blinker 1s linear infinite;
@@ -140,9 +243,13 @@ html {
     }
   }
 
-@media screen and (min-width: 700px) {
-    .folders, .folders1 {
-        width: 60%;
+  .items1 img {
+    margin-bottom: -20px;
+  }
+
+@media screen and (min-width: 750px) {
+    .folders, .folders1, .folders2, .folders3 {
+        width: 40%;
         height: fit-content;
     }
 
@@ -153,11 +260,4 @@ html {
     .bar p {
         font-size: 8pt;
     }
-}
-
-@media screen and (min-width: 1440px) {
-    .folders, .folders1 {
-        width: 45%;
-    }
-
 }
