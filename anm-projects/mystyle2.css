@@ -229,6 +229,24 @@ html {
     overflow: hidden;
 }
 
+.folders3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.admin {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.admin p {
+    margin: 8px 20px;
+}
+
 video::-webkit-media-controls {
     display: none;
   }
