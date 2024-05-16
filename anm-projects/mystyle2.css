@@ -265,6 +265,11 @@ video::-webkit-media-controls {
     margin-bottom: -20px;
   }
 
+  .video_prova {
+    width: 100%;
+    height: fit-content;
+  }
+
 @media screen and (min-width: 750px) {
     .folders, .folders1, .folders2, .folders3 {
         width: 40%;
