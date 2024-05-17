@@ -163,7 +163,7 @@ html {
     margin: auto 0px;
 }
 
-.items1, .items2 {
+.items1, .items2, .items3 {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -173,6 +173,18 @@ html {
     
 }
 
+.items3 {
+    max-height: 400px;
+}
+
+.items3 p {
+    margin: 15px;
+}
+
+.items3 .titolo {
+    width: 100%;
+    margin-bottom: 0px;
+}
 
 .element1 {
     text-align: center;
@@ -208,7 +220,8 @@ html {
     background-color: rgb(177, 177, 177);
     width: 100%;
     border-bottom:rgb(177, 177, 177) 3px solid;
-    box-shadow: 0px 2px 2px rgb(37, 37, 37)
+    box-shadow: 0px 2px 2px rgb(37, 37, 37);
+    z-index: 1;
 }
 
 .abstract-bar b {
