@@ -29,8 +29,8 @@
                 <div class="buttons"><img src="https://i.redd.it/qa0k1n3tfar81.png" width="70px"></div>
             </div>
             <div class="img-abstract">
-                <video width="560" height="315" frameborder="0" controls autoplay muted playsinline>
-                    <source src="video_prova.mp4" type="video/mp4">
+                <video class="video_prova" width="560" height="315" frameborder="0" controls autoplay muted playsinline>
+                    <source src="anm-chat.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
@@ -48,14 +48,16 @@
                 <p><u>V</u>iew</p>
                 <p><u>H</u>elp</p></b>
             </div>
-            <div class="abstract">
-                <p><b>ANM Metaline</b><br><br>
-                    "L’obiettivo del progetto risiede nello sviluppo di un’<b>applicazione di navigazione indoor</b> che ottimizzi la <b>User Experience</b> dei viaggiatori all’interno delle stazioni della <b>metropolitana di Napoli.</b></p>
-                    <p>Nello specifico parliamo di un sistema applicativo <b>personalizzabile</b> in grado di guidare l'utente nella propria esperienza metropolitana sfruttando la tecnologia della <b>realtà aumentata</b> e lasciando allo stesso la possibilità di scegliere la modalità di fruizione.</p>
-                    <p>L'esperienza di navigazione viene arricchita da elementi grafici che non solo guidano l'utente all'interno delle stazioni, ma lo <b>intrattengono</b>, valorizzando lo straordinario <b>patrimonio artistico e culturale</b> di cui godono."<b class="blink">|</b></p>
-                </p>
+            <div class="abstract-pdf">
+                <img src="anm-chat-pdf/1.jpg" style="width:100%">
+                <img src="anm-chat-pdf/2.jpg" style="width:100%">
+                <img src="anm-chat-pdf/3.jpg" style="width:100%">
+                <img src="anm-chat-pdf/4.jpg" style="width:100%">
+                <img src="anm-chat-pdf/5.jpg" style="width:100%">
+                <img src="anm-chat-pdf/6.jpg" style="width:100%">
+                <img src="anm-chat-pdf/7.jpg" style="width:100%"></div>
+                <div class="link_pdf"><a href="anm-chat-pdf.pdf">Scarica il pdf</a></div>
             </div>
-        </div>
         <div class="folders3">
             <div class="bar">
                 <div class="bar-left">
@@ -65,9 +67,8 @@
                 <div class="buttons"><img src="https://i.redd.it/qa0k1n3tfar81.png" width="70px"></div>
             </div>
             <div class="admin">
-                <p><b>Rebecca Buonamico</b></p>
-                    <p><b>Francesca Dialmi</b></p>
-                    <p><b>Renata Rodriguez</b></p>
+                <p><b>Luca Palmieri</b></p>
+                    <p><b>Vincenzo Tarantino</b></p>
             </div>
         </div>
         </div>
@@ -76,6 +77,24 @@
             function myFunction() {
               document.getElementById("myVideo").controls = false;
             }
+
+            var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
             </script>
         </body>
 </html>
