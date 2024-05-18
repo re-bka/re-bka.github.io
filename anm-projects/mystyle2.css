@@ -15,6 +15,7 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    margin: 10px 0px;
 }
 
 .folders, .folders1, .folders2, .loading, .folders3 {
@@ -25,7 +26,7 @@ body {
     background-color:white;
     border: rgb(177, 177, 177) 3px solid;
     height: 70%;
-    box-shadow:inset 2px 2px 2px rgb(37, 37, 37), -1px 0px 0px rgb(255, 255, 255), inset -1px -1px 0px rgb(148, 148, 148);
+    box-shadow:-1px 0px 0px rgb(255, 255, 255), inset -1px -1px 0px rgb(148, 148, 148);
 }
 
 .folders1 {
@@ -187,13 +188,24 @@ html {
 }
 
 
+.abstract-pdf img {
+    display: inline-block;
+    height: 100%;
+    margin:0px;
+    padding: 0px;
+    margin-bottom: -4px;
+}
+
 .abstract-pdf {
     overflow: auto;
     white-space: nowrap;
+    height: 316px;
 }
 
-.abstract-pdf img {
-    display: inline-block;
+.abstract-pdf a {
+    color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .element1 {
@@ -247,7 +259,7 @@ html {
 }
 
 .folders2, .folders3 {
-    width: 80%;
+    width: 90%;
     height: fit-content;
     overflow: hidden;
 }
