@@ -199,7 +199,7 @@ html {
 .abstract-pdf {
     overflow: auto;
     white-space: nowrap;
-    height: 316px;
+    aspect-ratio: 16 / 9;
 }
 
 .abstract-pdf a {
